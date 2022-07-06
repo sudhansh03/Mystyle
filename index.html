@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mySlides {display:none;}
+        </style>
+    
+     <style>
+
+ html
+ {
+     scroll-behavior: smooth;
+ }
+
+         * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        h3{
+            text-align: center;
+        }
+         h2{
+            background-color: #333333;
+            padding: 5px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+         }
+         body{
+             padding: 30px;
+         }
+         h1{
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;             
+             text-align: center;
+             font-size: 60px;
+             color: rgb(246, 193, 96);
+         }
+         .slogan{
+            font-size: larger;
+         }
+         h1:before, h1:after {
+              position: absolute;
+              top: 28%;
+              overflow: hidden;
+              width: 50%;
+              height: 1px;
+              content: '\a0';
+              background-color: rgb(15, 15, 15);
+         }
+         h1:before {
+              margin-left: -50%;
+              text-align: right;
+}
+
+         ul{
+        
+              list-style-type: none;
+              margin: 0;
+              padding: 7px;
+              overflow: hidden;
+              background-color: white;
+            
+         }
+        
+         li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: rgb(47, 45, 45);
+              text-align: center;
+             padding: 22px;
+            text-decoration: none;
+            border: none;
+              outline: none;
+              font-size: 19px;
+            }
+            
+            li a:hover {
+              color: #f86363;
+            }
+            
+            .search{
+                border: none;
+                outline: none;
+                font-size: 19px;
+                font-style: italic;
+            }
+            .search:hover{
+                text-decoration: underline;
+
+            }
+            .loginImage{
+              width: 17px;
+              
+            }
+            .cart{
+                width: 17px;
+            }
+            .x{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .column{
+                padding: 30px;
+            }
+            .buttons{
+                width: 100px;
+              
+                background-color: rgb(249, 237, 214);
+                color: #817e7ea5;
+                font-weight: 200px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 10px;
+                
+            }
+            .buttons:hover {
+                color: black;
+                background-color: rgb(246, 215, 156);
+            }
+            .button{
+                background-color: rgb(0, 0, 0);
+                color: white;
+                width: 200px;
+                height: 40px;
+               text-align: center;
+               
+               
+                font-weight: 200px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 20px;
+                
+                
+            }
+            .button:hover{
+                color: rgb(8, 8, 8);
+                background-color: white;
+            }
+            .x{
+                text-align: center;
+            }
+            .footer{
+                text-align: center;
+            }
+            h4{
+                text-align: center;
+                font-size: 45px;
+                text-decoration: underline;
+            }
+            .plogin{
+                align-self: center;
+            }
+            .plogin{
+                padding-left: 50px;
+                padding-bottom: 15px;
+                padding-top: 20px;
+                text-align: center;
+                font-size: 30px;
+                font-style: italic;
+                border: 3px solid black;
+                width: 1350px;
+                
+                
+
+
+            }
+            .butlog{
+                background-color: rgb(0, 0, 0);
+                color: white;
+                width: 200px;
+                height: 40px;
+               text-align: center;
+               
+               
+                font-weight: 200px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 20px;
+                
+            }
+            .butlog:hover{
+                color: black;
+                background-color: white;
+                width: 60px;
+            }
+            .plogin:hover{
+                color: #f86363
+            }
+           
+            .input{
+                border-radius: 10px;
+                width: 200px;
+                height: 29px;
+            }
+            input[type="text"]::placeholder {
+                 
+                 /* Firefox, Chrome, Opera */
+                 text-align: center;
+                 font-size: 19px;
+             }
+             .input:hover::placeholder{
+                 color: black;
+                 
+             }
+             .input:hover{
+                 width: 210px;
+                 border-radius: 10px;
+                 height: 31px;
+             }
+             input[type="password"]::placeholder {
+                 
+                 /* Firefox, Chrome, Opera */
+                 text-align: center;
+                 font-size: 19px;
+             }
+            
+
+     </style>
+</head>
+<body>
+    <h2>
+      <marquee behavior="" direction="right"> Free Shiping & 10% discount on Code: MYSTYLE.</marquee>  
+    </h2>
+    <nav>
+       <h1 >
+           My Style
+       </h1>
+       <h6 style="text-align: center;" class="slogan"> Try it,Wear it,Love it </h6>
+       <hr>
+        <ul class="navlinks">
+
+           <li>
+               <a href="#"> <input class="search" type="text" placeholder="🔍 search"></a>
+           </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#products">Our Products</a>
+            </li>
+            <li>
+                <a href="#">Contact US</a>
+            </li>
+            <li>
+                <a href="#login"> <img src="images/login-rounded-right--v2.gif" alt="" class="loginImage"> Log in</a>
+            </li>
+            <li>
+                <a href="#"> <img src="images/204-256.webp" alt="" class="cart"> Cart</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+ <div>
+    <img  class="myslides" src="images/image1 copy.jpeg" alt="" width="1330px" height="600px" >
+    <img  class="myslides" src="images/image3.jpeg" alt="" width="1330px" height="600px">
+ </div>
+ <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("myslides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <hr>
+    <hr>
+
+    <H2 id="products">
+        NEW ARRIVALS
+    </H2>
+     <ul class="x">
+        <div class="row" >
+            <li><div  class="column">
+                <img src="images/image4.jpeg" alt="" width="270px" padding="20px" >
+                 <button class="buttons" type="button"  > Rs.500 <hr> Add to Cart</button>
+    
+            </div></li>
+            <li> <div class="column"> <img src="images/image5.jpeg" alt="" width="270px"  padding="20px">
+                <button class="buttons" type="button" > Rs.500 <hr>    Add to Cart</button> </div></li>
+            
+                <li>
+                    <div class="column"><img src="images/image6.jpeg" alt="" width="270px" padding="20px" >
+                        <button class="buttons" type="button"  >Rs.500 <hr>  Add to Cart</button>
+                    </div>
+                </li>
+    
+                
+        </div>
+     </ul>
+   <h3>
+     <button class="button">Shop All</button>
+   </h3>
+   <hr>
+   <hr>
+    <h4 id="login" >
+         <img src="images/login-rounded-right--v2.gif" alt="" width="50px"> Log in
+    </h4>
+    <p  class="plogin"  >
+        Aapka Pehchaan!🙃 : <input class="input" type="text" name="Name" placeholder="user id">
+        <br>
+        <br>
+        Password : <input class="input" type="password" name="Password"  placeholder="password">
+        <br><br>
+        <button class="butlog">login</button>
+    </p>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+ <footer class="footer">
+    Copyright© My Style
+ </footer>
+ 
+</body>
+</html>
